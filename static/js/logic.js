@@ -88,7 +88,8 @@ let icons = {
 };
 
 // Perform an API call to the Citi Bike station information endpoint.
-d3.json("https://gbfs.citibikenyc.com/gbfs/en/station_information.json").then(function(infoRes) {
+// d3.json("https://gbfs.citibikenyc.com/gbfs/en/station_information.json").then(function(infoRes) {
+d3.json("data/station_information.json").then(function(infoRes) {
 
   // When the first API call completes, perform another call to the Citi Bike station status endpoint.
   d3.json("https://gbfs.citibikenyc.com/gbfs/en/station_status.json").then(function(statusRes) {
